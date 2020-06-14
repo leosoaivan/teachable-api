@@ -11,7 +11,7 @@ module RequestSpecHelpers
 
   def decoded_jwt_token_from_response(response)
     token_from_request = response.headers['Authorization'].split(' ').last
-    JWT.decode(token_from_request, Rails.application.credentials[:JWT_SECRET], true)
+    JWT.decode(token_from_request, Rails.application.credentials[:jwt_secret], true)
   end
 end
 
