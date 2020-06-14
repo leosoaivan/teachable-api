@@ -8,6 +8,8 @@ git:
 branches:
   except:
     - master
+before_install:
+  - openssl aes-256-cbc -K $encrypted_5a7e44ae5516_key -iv $encrypted_5a7e44ae5516_iv -in test.key.enc -out config/credentials/test.key -d
 before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database travis_ci_test;' -U postgres
