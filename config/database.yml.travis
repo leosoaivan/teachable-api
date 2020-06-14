@@ -1,21 +1,3 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
-  username: teachable_api
-  password: t34ch4bl3_4p1
-
-development:
-  <<: *default
-  database: teachable_api_development
-
 test:
-  <<: *default
-  database: teachable_api_test
-
-production:
-  <<: *default
-  database: teachable_api_production
-  username: teachable_api
-  password: <%= ENV['TEACHABLE_API_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  database: travis_ci_test
