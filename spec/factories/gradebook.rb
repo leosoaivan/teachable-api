@@ -1,7 +1,9 @@
 FactoryBot.define do
   factory :gradebook do
-    association :user
+    # Associations
+    user
 
-    subject { Faker::Educator.course_name }
+    # Attributes
+    title { Faker::Educator.course_name }
   end
 end
