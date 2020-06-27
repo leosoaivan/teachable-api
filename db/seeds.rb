@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+Gradebook.destroy_all
+
+User.create!({
+  email: 'development@teachable.com',
+  password: 'password',
+  password_confirmation: 'password'
+})
+
+test_user = User.first
+
+5.times do
+  test_user.gradebooks.create!({
+    title: Faker::Educator.unique.course_name
+  })
+end
