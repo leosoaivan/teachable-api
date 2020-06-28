@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 require 'json'
 
@@ -20,8 +22,8 @@ RSpec.describe 'POST /signup', type: :request do
       json_response = JSON.parse(response.body)
 
       expect(response.status).to eq 200
-      expect(json_response["id"]).to_not be nil
-      expect(json_response["email"]).to eq 'user@example.com'
+      expect(json_response['id']).to_not be nil
+      expect(json_response['email']).to eq 'user@example.com'
     end
   end
 

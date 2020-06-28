@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'POST /login', type: :request do
@@ -26,7 +28,7 @@ RSpec.describe 'POST /login', type: :request do
     before do
       post '/login'
     end
-    
+
     it 'returns unathorized status' do
       expect(response.status).to eq 401
     end
