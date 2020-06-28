@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# :nocov:
 module ExceptionHandler
   extend ActiveSupport::Concern
 
@@ -13,3 +14,4 @@ module ExceptionHandler
     end
   end
 end
+# :nocov:
