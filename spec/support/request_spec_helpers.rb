@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 module RequestSpecHelpers
-  def login user
+  def login(user)
     params = {
       user: {
         email: user.email,
         password: user.password
       }
     }
-    post '/login', params: params 
+    post '/login', params: params
   end
 
   def decoded_jwt_token_from_response(response)
