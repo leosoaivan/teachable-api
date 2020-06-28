@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Build Status](https://travis-ci.org/leosoaivan/teachable-api.svg?branch=master)](https://travis-ci.org/leosoaivan/teachable-api)
+<a href="https://codeclimate.com/github/leosoaivan/teachable-api/maintainability"><img src="https://api.codeclimate.com/v1/badges/e2a4454c7941b0518147/maintainability" /></a>
+<a href="https://codeclimate.com/github/leosoaivan/teachable-api/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e2a4454c7941b0518147/test_coverage" /></a>
