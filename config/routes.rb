@@ -12,4 +12,8 @@ Rails.application.routes.draw do
       sessions: 'sessions',
       registrations: 'registrations'
     }
+
+  resources :users, only: [:show] do
+    resources :gradebooks, shallow: true
+  end
 end

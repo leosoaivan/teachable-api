@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# :nocov:
 class SessionsController < Devise::SessionsController
   respond_to :json
 
@@ -13,3 +14,4 @@ class SessionsController < Devise::SessionsController
     head :no_content
   end
 end
+# :nocov:

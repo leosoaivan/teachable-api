@@ -14,6 +14,7 @@ gem 'rack-cors'
 gem 'devise-jwt', '~> 0.7.0'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'rubocop', '~> 0.86.0'
+gem 'simplecov', '~> 0.17.1', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -30,7 +31,6 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 4.3'
-  gem 'simplecov', '~> 0.17.1', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
