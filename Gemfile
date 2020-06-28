@@ -30,6 +30,7 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 4.3'
+  gem 'simplecov', '~> 0.18.5', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
